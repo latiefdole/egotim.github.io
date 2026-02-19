@@ -1,37 +1,198 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Profile - Tim Developer</title>
-</head>
-<body>
-    <header>
-        <h1>Welcome to Tim Developer</h1>
-        <p>Your partner in innovative software solutions.</p>
-    </header>
-    <section>
-        <h2>About Us</h2>
-        <p>Tim Developer is a leading software development company specializing in creating cutting-edge applications tailored to meet the unique needs of our clients. Founded in 2023, our mission is to empower businesses through technology.</p>
-    </section>
-    <section>
-        <h2>Our Services</h2>
-        <ul>
-            <li>Custom Software Development</li>
-            <li>Mobile App Development</li>
-            <li>Web Development</li>
-            <li>Cloud Solutions</li>
-            <li>IT Consulting</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Contact Us</h2>
-        <p>If you have any inquiries, please reach out to us at:</p>
-        <p>Email: contact@timdeveloper.com</p>
-        <p>Phone: +1 (234) 567-890</p>
-    </section>
-    <footer>
-        <p>&copy; 2026 Tim Developer. All rights reserved.</p>
-    </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EGO | Digital Future</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Syne:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- GSAP & Lenis -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+  </head>
+  <body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Background Noise/Grid -->
+    <div class="bg-grid"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <a href="#" class="logo">EGO.Tech</a>
+      <div class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#contact" class="nav-link">Hello</a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero container">
+        <div class="hero-content">
+          <p class="hero-subtitle">Digital &bull; Creative &bull; Future</p>
+          <div class="hero-title-wrapper">
+            <h1 class="display-text line-1">WE CRAFT</h1>
+          </div>
+          <div class="hero-title-wrapper">
+            <h1 class="display-text line-2" style="margin-left: 10vw">
+              DIGITAL
+            </h1>
+          </div>
+          <div class="hero-title-wrapper">
+            <h1 class="display-text line-3" style="text-align: right">
+              REALITIES
+            </h1>
+          </div>
+        </div>
+        <div class="scroll-indicator">Scroll to Explore</div>
+      </section>
+
+      <!-- Marquee Text -->
+      <div class="marquee-container">
+        <div class="marquee-content">
+          <span class="marquee-item">Strategy</span>
+          <span class="marquee-item">Design</span>
+          <span class="marquee-item">Development</span>
+          <span class="marquee-item">Interaction</span>
+          <span class="marquee-item">Strategy</span>
+          <span class="marquee-item">Design</span>
+          <span class="marquee-item">Development</span>
+          <span class="marquee-item">Interaction</span>
+        </div>
+      </div>
+
+      <!-- About Section -->
+      <section id="about" class="container" style="align-items: flex-start">
+        <div style="max-width: 800px">
+          <h2 class="section-title">Who We Are</h2>
+          <p
+            style="
+              font-size: clamp(1.5rem, 3vw, 2.5rem);
+              line-height: 1.2;
+              margin-top: 2rem;
+            "
+          >
+            EGO is a forward-thinking digital studio. We bridge the gap between
+            <span style="color: var(--accent-color)">functional design</span>
+            and
+            <span style="color: var(--accent-color)">cinematic experience</span
+            >. We don't just build websites; we construct digital monuments.
+          </p>
+        </div>
+      </section>
+
+      <!-- Selected Works -->
+      <div id="work" class="container" style="padding: 10vh 20px">
+        <h2 class="section-title">Selected Works</h2>
+        <div class="project-list">
+          <div class="project-item">
+            <span class="project-cat">Fintech / 2024</span>
+            <h3 class="project-name">Neon Bank</h3>
+            <span class="project-arrow">&rarr;</span>
+          </div>
+          <div class="project-item">
+            <span class="project-cat">E-Commerce / 2023</span>
+            <h3 class="project-name">Vogue X</h3>
+            <span class="project-arrow">&rarr;</span>
+          </div>
+          <div class="project-item">
+            <span class="project-cat">AI Platform / 2025</span>
+            <h3 class="project-name">Neural Net</h3>
+            <span class="project-arrow">&rarr;</span>
+          </div>
+          <div class="project-item">
+            <span class="project-cat">Portfolio / 2024</span>
+            <h3 class="project-name">Akira Studio</h3>
+            <span class="project-arrow">&rarr;</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Services Section with Cards -->
+      <section id="services" class="container">
+        <h2 class="section-title">Our Expertise</h2>
+        <div class="services-grid">
+          <div class="service-card" data-speed="0.02">
+            <div class="service-num">01</div>
+            <h3 class="service-title">UI/UX Design</h3>
+            <p class="service-desc">
+              Crafting intuitive interfaces with a focus on user retention and
+              aesthetic excellence.
+            </p>
+          </div>
+          <div class="service-card" data-speed="0.05">
+            <div class="service-num">02</div>
+            <h3 class="service-title">Web Development</h3>
+            <p class="service-desc">
+              Robust, scalable, and high-performance code using the latest
+              frameworks (React, Vue, WebGL).
+            </p>
+          </div>
+          <div class="service-card" data-speed="0.08">
+            <div class="service-num">03</div>
+            <h3 class="service-title">Brand Identity</h3>
+            <p class="service-desc">
+              Visual storytelling that resonates. Logos, typography, and
+              complete design systems.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer / Contact -->
+      <footer id="contact" class="footer">
+        <div class="container">
+          <h2 style="font-size: 1rem; color: #666; margin-bottom: 2rem">
+            HAVE AN IDEA?
+          </h2>
+          <a href="mailto:hello@ego.studio" class="footer-cta">LET'S TALK</a>
+
+          <div class="footer-info">
+            <div>
+              <p>Jakarta, Indonesia</p>
+              <p>Sudirman Central Business District</p>
+            </div>
+            <div>
+              <a
+                href="#"
+                style="color: #666; margin-right: 20px; text-decoration: none"
+                >Instagram</a
+              >
+              <a
+                href="#"
+                style="color: #666; margin-right: 20px; text-decoration: none"
+                >Twitter</a
+              >
+              <a href="#" style="color: #666; text-decoration: none"
+                >LinkedIn</a
+              >
+            </div>
+            <div>
+              <p>&copy; 2026 EGO Studio.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
